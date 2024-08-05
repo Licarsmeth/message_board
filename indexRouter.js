@@ -3,13 +3,13 @@ const indexRouter = Router();
 
 const messages = [
     {
-      text: "Hi there!",
-      user: "Amando",
+      text: "You've grown so much. You took all the blame.",
+      user: "Rachel",
       added: new Date()
     },
     {
-      text: "Hello World!",
-      user: "Charles",
+      text: "WE WERE ON A BREAK!!!",
+      user: "Ross",
       added: new Date()
     }
   ];
