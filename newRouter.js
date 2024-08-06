@@ -6,7 +6,7 @@ newRouter.get("/", (req, res) => res.render("form"));
 newRouter.post("/", (req, res) => {
     const user = req.body.name;
     const text = req.body.message;
-    messages.push({text: text, user: user, added: new Date()});
+    messages.push({text: text, user: user, added: new Date().toISOString()});
     res.redirect("/");
 })
 

@@ -11,7 +11,16 @@
     <ul>
       <% messages.forEach (message => { %>
       <li><strong><%= message.user%></strong>: <%= message.text%></li>
-      <li><small>Added on: <%= message.added.toLocaleString() %></small></li>
+      <li>
+        <small>Added on: 
+          <script>
+            // Parse the UTC date string
+            var utcDate = new Date("<%= message.added %>");
+            // Convert to local time string
+            var localDate = utcDate.toLocaleString();
+            document.write(localDate);
+          </script>
+        </li>
       <% })%>
     </ul>
    <a href="/new">Add message</a>

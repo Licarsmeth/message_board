@@ -5,12 +5,12 @@ const messages = [
     {
       text: "You've grown so much. You took all the blame.",
       user: "Rachel",
-      added: new Date()
+      added: new Date().toISOString()
     },
     {
       text: "WE WERE ON A BREAK!!!",
       user: "Ross",
-      added: new Date()
+      added: new Date().toISOString()
     }
   ];
 
