@@ -18,5 +18,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", indexRouter);
 app.use("/new", newRouter);
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 app.listen(port, "0.0.0.0", () => console.log(`Server running on port ${port}`));
